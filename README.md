@@ -1,12 +1,78 @@
-# React + Vite
+# 🐉 Dragon Ball Characters Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en **React** que consume la API oficial de personajes de Dragon Ball (https://dragonball-api.com). La interfaz permite visualizar los personajes en tarjetas visuales, filtrarlos por género, y ver sus detalles usando ruteo con React Router.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
 
-## Expanding the ESLint configuration
+- ✅ Consumo de API con `fetch`
+- ✅ Tarjetas (cards) estilizadas con Material UI (MUI)
+- ✅ Rutas dinámicas con `react-router-dom`
+- ✅ Filtro por género (`Masculino`, `Femenino`) usando funciones de orden superior
+- ✅ Animación flotante en imagen del personaje
+- ✅ Navbar fijo y navegación fluida
+- ✅ Código modular, limpio y funcional
+- ✅ Totalmente responsives
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Estructura del Proyecto
+
+```
+/src
+├── components/
+│   ├── Navbar.jsx
+│   └── CharacterCard.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Male.jsx
+│   ├── Female.jsx
+│   ├── CharacterDetail.jsx
+│   └── About.jsx
+├── App.jsx
+├── App.css
+└── index.js
+```
+
+
+## 🔗 Enlaces
+
+- [API Dragon Ball](https://dragonball-api.com)
+- [Sitio Web de la API](https://web.dragonball-api.com)
+- [Documentación oficial de MUI](https://mui.com)
+- [Vercel Deployment (opcional)](https://vercel.com)
+
+---
+
+## 👨‍💻 Tecnologías utilizadas
+
+- React
+- React Router DOM
+- Material UI
+- Fetch API
+- CSS personalizado
+
+---
+
+## 🧠 Funcionalidades clave
+
+- **Página Home:** galería de personajes con diseño responsive.
+- **Detalle por personaje:** al hacer clic, se muestra la información completa usando `useParams`.
+- **Navbar:** navegación entre rutas (`Inicio`, `Masculino`, `Femenino`, `Acerca de`).
+- **Filtros por género:** usando `filter()` sobre los resultados de la API.
+- **Manejo de errores:** carga y errores con consola segura.
+
+---
+
+## 📌 Autor
+
+Desarrollado por: [Tu Nombre]  
+Estudiante de Ingeniería de Sistemas - 2025-I  
+Universidad [Nombre de tu universidad]
+
+---
+
+## 📃 Licencia
+
+Este proyecto es solo con fines educativos.
